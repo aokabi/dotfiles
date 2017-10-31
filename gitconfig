@@ -25,3 +25,6 @@
   autosquash = true
 [include]
   path = ~/.gitconfig.local
+[user]
+	email = aokabi@gmail.com
+	name = aokabi
