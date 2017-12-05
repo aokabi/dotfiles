@@ -27,6 +27,7 @@ call dein#add('kannokanno/previm')
 call dein#add('tyru/open-browser.vim')
 call dein#add('vim-scripts/dbext.vim')
 call dein#add('rust-lang/rust.vim')
+call dein#add('derekwyatt/vim-scala')
 call dein#end()
 
 if dein#check_install()
