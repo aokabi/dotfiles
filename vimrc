@@ -1,3 +1,4 @@
+set nocompatible
 "set encoding=utf-8
 "set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
 set fileformats=unix,dos,mac
@@ -28,6 +29,8 @@ call dein#add('tyru/open-browser.vim')
 call dein#add('vim-scripts/dbext.vim')
 call dein#add('rust-lang/rust.vim')
 call dein#add('derekwyatt/vim-scala')
+call dein#add('Shougo/vimfiler.vim')
+call dein#add('scrooloose/nerdtree')
 call dein#end()
 
 if dein#check_install()
