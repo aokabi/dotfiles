@@ -9,16 +9,19 @@ set noswapfile
 set autoread
 set hidden
 set showcmd
+set expandtab
 set tabstop=2
 set shiftwidth=2
+set autoindent
+set smartindent
 set clipboard=unnamed
+set foldmethod=syntax
 
 "Œ©‚½–ÚŒn
 set number
 hi LineNr ctermfg=239
 
-set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim
-
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 call dein#begin(expand('~/.vim/dein'))
 
 call dein#add('Shougo/dein.vim')
