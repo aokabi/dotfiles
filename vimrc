@@ -44,3 +44,4 @@ filetype plugin indent on
 
 au BufRead,BufNewFile *.md set filetype=markdown
 
+nnoremap <C-b> :w<CR>:make<CR>
