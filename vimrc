@@ -16,6 +16,8 @@ set autoindent
 set smartindent
 set clipboard=unnamed
 set foldmethod=syntax
+set statusline=%F%=%l
+set laststatus=2
 
 "Œ©‚½–ÚŒn
 set number
@@ -45,3 +47,4 @@ filetype plugin indent on
 au BufRead,BufNewFile *.md set filetype=markdown
 
 nnoremap <C-b> :w<CR>:make<CR>
+noremap <C-n> :NERDTreeToggle<CR>
