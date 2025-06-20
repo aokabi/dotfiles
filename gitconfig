@@ -1,7 +1,7 @@
 [init]
   templatedir = ~/.git_template
 [push]
-  default = current
+	default = current
 [color]
   ui = auto
 [alias]
@@ -23,8 +23,9 @@
   prune = true
 [rebase]
   autosquash = true
+	autostash = true
 [include]
   path = ~/.gitconfig.local
 [user]
-	email = aokabi@gmail.com
+	email = aokabit@gmail.com
 	name = aokabi

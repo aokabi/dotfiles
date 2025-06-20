@@ -19,7 +19,6 @@ set foldmethod=syntax
 set statusline=%F%=%l
 set laststatus=2
 
-"Œ©‚½–ÚŒn
 set number
 hi LineNr ctermfg=239
 
