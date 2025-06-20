@@ -11,3 +11,8 @@ tags
 tmp/**/*
 !tmp/cache/.keep
 *.pyc
+settings.json
+go.work
+go.work.sum
+.vscode/*
+tmp-*.nu

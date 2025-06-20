@@ -7,9 +7,6 @@
 setopt histignorealldups sharehistory
 setopt auto_cd
 
-# Use emacs keybindings even if our EDITOR is set to vi
-bindkey -e
-
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000
 SAVEHIST=1000
@@ -92,12 +89,6 @@ export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 export PATH="/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin:$PATH"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/toishi-takuma1/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/toishi-takuma1/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/toishi-takuma1/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/toishi-takuma1/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-
 # Load a few important annexes, without Turbo
 # (this is currently required for annexes)
 zinit light-mode for \
@@ -107,3 +98,10 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-rust
 
 ### End of Zinit's installer chunk
+
+### alias
+alias gcd='(){ cd $(ghq root)/$(ghq list | peco --query "$*") }'
+
+eval "$(direnv hook zsh)"
+
+bindkey -v
